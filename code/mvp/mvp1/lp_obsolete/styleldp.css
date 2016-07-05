@@ -1,0 +1,163 @@
+/*      -----     Landing Page   -----      */
+
+
+#contactform {
+    position: absolute;
+    height: auto;
+    z-index: 2;
+}
+
+.wrapper-ldp {
+    margin-left: 80px;
+}
+
+.ldp {
+    text-align: center;
+    margin-top: 40px;
+    width: 350px;
+}
+.ldp-form {
+    background: #fafafa;
+    width:300px;
+    margin: 20px auto;
+    border-radius: 6px;
+}
+
+.bg-opacite {
+    margin-top:15%;
+    background:rgba(255,255,255,0.6);
+    padding:3px;
+    border-radius: 10px;
+}
+fieldset {
+    width: 90%;
+    margin: 0 auto;
+}
+label {
+    display: block;
+    margin-bottom: 7px;
+}
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    height: 30px;
+    border-radius: 6px;
+    border: 1px solid #87cefa;
+}
+input[type="submit"] {
+    background: #808080;
+    font-size: 18px;
+    color: #ffffff;
+    border: 2px solid #808080;
+    padding: 3px 14px;
+    border-radius: 6px;
+}
+input[type="submit"]:hover {
+    background: #727272;
+}
+.send {
+    border: 2px solid #00bfff;
+}
+
+#map { position:absolute; top:0; bottom:0; width:100%; }
+
+h2{
+    color:#4d2e2e;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 10px;
+}
+h3{
+    color:#4d2e2e;
+    font-size: 19px;
+    margin-bottom: 10px;
+    line-height: 20px;
+}
+
+/*      -----     FOOTER   -----      */
+
+footer {
+    background: #2e2e2e;
+    display: block;
+    width:100%;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 5px;
+    font-size: 12px;
+    font-family: 'helvetica', sans-serif;
+    padding-top:5px;
+}
+footer ul li {
+    list-style: none;
+    padding:10px 10px 0 10px;
+    display: inline-block;
+    color:#ffffff;
+    padding-left:20px;
+}
+
+footer ul {
+    padding-left:0;
+}
+footer ul a {
+    color:#ffffff;
+}
+footer ul a:hover {
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+    padding:7px 10px 0 10px;
+    display: inline-block;
+    color:#ffffff;
+}
+
+ul {
+    padding-left:0;
+}
+ul a {
+    color:#ffffff;
+}
+.copyright {
+    color: #ffffff;
+}
+.leaflet-bottom{
+    display: none;
+}
+
+
+@media screen and (max-width: 710px) {
+    .wrapper-ldp {
+        margin: 0 auto;
+    }
+
+    #map {
+        display:block;
+        height: 600px;;
+        margin-top:0;
+    }
+    .ldp {
+        margin-top: 0;
+        width: 100%;
+        padding: 10px;
+    }
+    #contactform {
+        top: 0px;
+        position: relative ;
+    }
+    footer {
+        position: relative ;
+    }
+
+    footer ul {
+        margin-bottom: 0;
+    }
+    footer ul li {
+        display: inline-block;
+        width:100%;
+        text-align: center;
+        padding: 2px;
+    }
+    #map { position:relative; }
+
+}
+
+

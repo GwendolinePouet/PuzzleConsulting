@@ -1,0 +1,27 @@
+//Spliscreen home layout
+#multiscroll {
+
+  .fullscreen {
+    width: 200%;
+  }
+
+  .split-img {
+
+    .ms-tableCell {
+      overflow: hidden;
+      text-align: center;
+    }
+
+    img {
+      height: 100%;
+      margin: 0 -100%;
+    }
+  }
+
+  .split-txt {
+    padding: 2vw;
+    text-align: center;
+    color: $color-black;
+  }
+
+}

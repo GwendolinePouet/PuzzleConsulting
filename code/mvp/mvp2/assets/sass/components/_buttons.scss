@@ -1,0 +1,69 @@
+.btn-page {
+  padding: 9px 22px;
+  border-radius: 14px;
+  color: $color-white !important;
+  display: inline-block;
+  transition: all 0.2s ease-out;
+  &::before {
+    font-size: 2em;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 11px;
+  }
+}
+
+.btn-recrutement {
+  position: fixed;
+  z-index: 9999;
+  bottom: 76px;
+  right: 0;
+  background-color: $color-ds;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 14px 0 0 14px;
+}
+.btn-start {
+  margin-top: 10px;
+  background-color: $color-iv-1;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+}
+.btn-start:visited {
+  color: $color-white;
+}
+.btn-send-answer {
+  background-color: $color-iv-1;
+  border: none;
+  font-size: 1.5em;
+  font-weight: 300;
+  font-family: 'Lato';
+}
+.btn-ds, .btn-ee {
+  border: 1px solid;
+  margin: 15px 20px;
+  background-color: rgba(0,0,0,0.5);
+  &:hover strong {
+    color: $color-white;
+  }
+}
+.btn-ds {
+  border-color: $color-iv-3;
+  strong {
+    color: $color-iv-3;
+  }
+  &:hover {
+    background-color: $color-iv-3;
+
+  }
+}
+.btn-ee {
+  border-color: $color-iv-2;
+  strong {
+    color: $color-iv-2;
+  }
+  &:hover {
+    background-color: $color-iv-2;
+
+  }
+}

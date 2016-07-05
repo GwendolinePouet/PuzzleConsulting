@@ -1,0 +1,94 @@
+.home-sct-entry {
+  background:
+          url("../img/pattern.png") repeat fixed 0 0 /auto,
+          url("../img/bg-home.jpg") no-repeat fixed center center/cover, url("../img/pattern.png")
+  ;
+
+  .slogan-txt {
+    text-shadow: 0 0 4px rgba(0,0,0,0.8);
+    margin-bottom: 5vh;
+  }
+}
+.home-vertical-nav .point-list .p2 .bullets.active-point::before{
+  background-color: $color-black;
+}
+/* MAP */
+.home-sct-map {
+  position: relative;
+}
+.home-sct-split {
+
+  h2 {
+    font-size: 1.75em;
+    margin-bottom: 1rem;
+
+    &::after {
+      @extend %afterh2;
+    }
+  }
+}
+
+.infos-contact {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 75px 40px 30px;
+  background-color: $color-iv-1;
+  color: #FFF;
+
+  h2::after {
+   background-color: $color-white;
+  }
+
+  address {
+    margin: 1.75em 0;
+    p {
+      width: 50%;
+      float: left;
+      letter-spacing: 0;
+      text-align: left;
+      padding:5px;
+    }
+    & {
+      @extend %clearfix;
+    }
+  }
+  .social-list li {
+    color: $color-white;
+  }
+}
+
+#map {
+  width: 100%;
+  left: 0;
+  height: 50%;
+}
+.split-form-contact {
+  padding: 75px 30px 30px;
+  h2::after {
+    background-color: $color-iv-1;
+  }
+}
+.home-form {
+  width: 540px;
+  max-width: 100%;
+  padding: 20px;
+
+  li {
+    display: block;
+  }
+  .input-field {
+    input, select, textarea {
+      color: $color-black;
+      font-size: 1rem;
+      letter-spacing: 1px;
+    }
+  }
+.contact-message {
+  margin-top: 20px;
+  color: #ed281f;
+  font-weight: 600;
+}
+}

@@ -1,0 +1,26 @@
+
+
+//Helper to size elements
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+//Helper to color social icon
+@mixin social($color) {
+  border-color: $color;
+  color: $color;
+
+  a::after {
+    box-shadow: 0 0 0 4px $color;
+  }
+}
+
+//Helper to flexbox
+@mixin flexbox($display, $direction, $align, $width, $height) {
+  display: $display;
+  flex-direction: $direction;
+  align-items: $align;
+  width: $width;
+  height: $height;
+}

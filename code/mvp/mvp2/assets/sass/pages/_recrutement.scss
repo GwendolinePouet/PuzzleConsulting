@@ -1,0 +1,168 @@
+
+/*---------------------------------------------
+$ RECRUTEMENT - STAFFING PAGE
+----------------------------------------------*/
+.er-sct {
+  background: url("../img/bg-ds-home.jpg") no-repeat fixed 0% 0% / cover;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.er-container  {
+  position: relative;
+  width: 980px;
+  min-height: 400px;
+  max-width: 100%;
+  padding: 20px;
+  overflow: hidden;
+  border-radius: 40px;
+  background-color: $color-white;
+  color: $color-black;
+  text-align: left;
+  letter-spacing: 0;
+
+
+  li {
+    display: block;
+  }
+}
+
+#countdown {
+  position: absolute;
+  bottom: 0px;
+  right: 5px;
+  z-index: 60;
+  display: none;
+  text-align: center;
+  transition: all 0.2s ease-out;
+  
+  &.active {
+    display: block;
+  }
+}
+
+/*
+  # SCREEN 1
+*/
+.er-screen-1 {
+  @include flexbox(flex, row, stretch, 100%, auto);
+}
+.er-indication {
+  width: 50%;
+  padding: 40px 20px 40px 40px;
+  font-size: 12px;
+  h1::after {
+    display: none;
+  }
+  p,ul,ol {
+    font-size: 1.25em;
+  }
+  .warning {
+    font-weight: bold;
+    color: $color-iv-1;
+  }
+}
+
+.er-infos-form {
+  width: 50%;
+  padding: 40px 40px 40px 20px;
+
+  .infos {
+    font-size: 0.9rem;
+    color: $color-iv-1;
+    margin-top: 10px;
+  }
+}
+.start-btn-container {
+  text-align: right;
+}
+
+
+/*
+  # QUESTIONS SCREEN
+*/
+.quizz-form {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+[class^="er-screen-"].screen-out {
+  animation: screen_out 0.3s ease-out forwards;
+}
+
+.question-screen  {
+  position: absolute;
+  top: 0;
+  left: 0;
+  @include flexbox(flex, row, center, 100%, 100%);
+  text-align: center;
+  transform: translateX(100%);
+  opacity: 0;
+
+  h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0 0 2rem;
+    letter-spacing: 2px;
+    text-align: center;
+
+    &::after {
+      content: "";
+      display: block;
+      margin: 10px auto 0;
+      width: 30px;
+      height: 2px;
+      background-color: $color-iv-2;
+    }
+  }
+
+  .er-answer-list li {
+    margin-bottom: 5px;
+    padding: 10px 20px;
+    border: 1px solid $color-iv-2;
+    text-align: center;
+    border-radius: 13px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    label {
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+
+    &:hover {
+      background-color: $color-iv-2;
+
+      & label {
+        color: $color-white;
+      }
+    }
+    input[type="radio"] {
+      opacity: 0;
+    }
+  }
+  &.screen-in {
+    animation: screen_in 0.3s ease-out forwards;
+  }
+
+  .question-container {
+    padding: 20px 40px;
+    margin: auto;
+    text-align: center;
+  }
+}
+.confirm-screen {
+  z-index: 5;
+}
+.er-screen-6  {
+  img {
+    transition: all 0.2s ease;
+  }
+
+  li:hover img {
+    filter:invert(100%);
+  }
+}
+[class^="msg-"]:empty {
+  display: none;
+}
