@@ -38,7 +38,7 @@ $('document').ready(function ($) {
         scrollPart($(this.hash));
     });
     //smooth scroll to second section
-    $('.page-part, .scroll-calltoaction').on('click', function(event){
+    $('.scroll-calltoaction').on('click', function(event){
         event.preventDefault();
         scrollPart($(this.hash));
     });

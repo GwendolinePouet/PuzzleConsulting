@@ -98,11 +98,12 @@
         <div class="newsletter-txt">
             <p><strong>Pour suivre l'aventure Puzzle, abonnez-vous&nbsp;!</strong>*<br>*Abonnement à la newsletter mensuelle</p>
         </div>
-        <form class="newsletter-form" method="post" action="process.php" enctype="multipart/form-data">
+        <form id="newsletter-form" class="newsletter-form" method="post" action="newsletter.php" enctype="multipart/form-data">
             <div class="input-email">
                 <input id="Email" name="email" type="email" placeholder="Email">
                 <input class="submit-input" type="submit" value="&#xe903;" >
             </div>
+            <span class="newsletter-msg"></span>
 
 
         </form>
@@ -111,5 +112,6 @@
 
 </footer>
 <?php
+    $moreJS = "<script src=\"newsletter.js\"></script>";
     include('includes/footer.php');
 ?>

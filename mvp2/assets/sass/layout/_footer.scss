@@ -99,5 +99,20 @@
       color: $color-iv-2;
     }
   }
+  .newsletter-msg {
+    font-size: .85rem;
+    letter-spacing: 1px;
+    display: block;
+    margin-top: 5px;
+    &.ok {
+      color: #a4ee72;
+    }
+    &.nook {
+      color: #ed281f;
+    }
+    &:empty {
+      display: none;
+    }
+  }
 
 }

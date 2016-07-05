@@ -691,15 +691,17 @@ h1, h2 {
   padding: 9px 22px;
   border-radius: 14px;
   color: #FFFFFF !important;
-  display: inline-block; }
-  /* line 6, ../sass/components/_buttons.scss */
+  display: inline-block;
+  -webkit-transition: all 0.2s ease-out;
+          transition: all 0.2s ease-out; }
+  /* line 7, ../sass/components/_buttons.scss */
   .btn-page::before {
     font-size: 2em;
     display: inline-block;
     vertical-align: middle;
     margin-right: 11px; }
 
-/* line 14, ../sass/components/_buttons.scss */
+/* line 15, ../sass/components/_buttons.scss */
 .btn-recrutement {
   position: fixed;
   z-index: 9999;
@@ -710,7 +712,7 @@ h1, h2 {
   font-weight: bold;
   border-radius: 14px 0 0 14px; }
 
-/* line 24, ../sass/components/_buttons.scss */
+/* line 25, ../sass/components/_buttons.scss */
 .btn-start {
   margin-top: 10px;
   background-color: #118BB2;
@@ -718,17 +720,46 @@ h1, h2 {
   font-weight: bold;
   border: none; }
 
-/* line 31, ../sass/components/_buttons.scss */
+/* line 32, ../sass/components/_buttons.scss */
 .btn-start:visited {
   color: #FFFFFF; }
 
-/* line 34, ../sass/components/_buttons.scss */
+/* line 35, ../sass/components/_buttons.scss */
 .btn-send-answer {
   background-color: #118BB2;
   border: none;
   font-size: 1.5em;
   font-weight: 300;
   font-family: 'Lato'; }
+
+/* line 42, ../sass/components/_buttons.scss */
+.btn-ds, .btn-ee {
+  border: 1px solid;
+  margin: 15px 20px;
+  background-color: rgba(0, 0, 0, 0.5); }
+  /* line 46, ../sass/components/_buttons.scss */
+  .btn-ds:hover strong, .btn-ee:hover strong {
+    color: #FFFFFF; }
+
+/* line 50, ../sass/components/_buttons.scss */
+.btn-ee {
+  border-color: #FF4B7C; }
+  /* line 52, ../sass/components/_buttons.scss */
+  .btn-ee strong {
+    color: #FF4B7C; }
+  /* line 55, ../sass/components/_buttons.scss */
+  .btn-ee:hover {
+    background-color: #FF4B7C; }
+
+/* line 60, ../sass/components/_buttons.scss */
+.btn-ds {
+  border-color: #31CDFF; }
+  /* line 62, ../sass/components/_buttons.scss */
+  .btn-ds strong {
+    color: #31CDFF; }
+  /* line 65, ../sass/components/_buttons.scss */
+  .btn-ds:hover {
+    background-color: #31CDFF; }
 
 /* line 3, ../sass/layout/_header.scss */
 .header-site {
@@ -946,6 +977,21 @@ h1, h2 {
     cursor: pointer;
     background-color: transparent;
     color: #31CDFF; }
+/* line 102, ../sass/layout/_footer.scss */
+.footer-1 .newsletter-msg {
+  font-size: .85rem;
+  letter-spacing: 1px;
+  display: block;
+  margin-top: 5px; }
+  /* line 107, ../sass/layout/_footer.scss */
+  .footer-1 .newsletter-msg.ok {
+    color: #a4ee72; }
+  /* line 110, ../sass/layout/_footer.scss */
+  .footer-1 .newsletter-msg.nook {
+    color: #ed281f; }
+  /* line 113, ../sass/layout/_footer.scss */
+  .footer-1 .newsletter-msg:empty {
+    display: none; }
 
 /* line 1, ../sass/layout/_grid.scss */
 .full-section {
@@ -975,6 +1021,13 @@ h1, h2 {
   padding: 2vw;
   text-align: center;
   color: #343434; }
+
+/* line 1, ../sass/pages/_home.scss */
+.home-sct-entry {
+  background: url("../img/pattern.png") repeat fixed 0 0/auto, url("../img/bg-home.jpg") no-repeat fixed center center/cover, url("../img/pattern.png"); }
+  /* line 7, ../sass/pages/_home.scss */
+  .home-sct-entry .slogan-txt {
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.8); }
 
 /* line 1, ../sass/pages/_ds-home.scss */
 .ds-sct-entry {

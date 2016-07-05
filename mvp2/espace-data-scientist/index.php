@@ -26,7 +26,7 @@
 </section>
 <section id="part2" class="sct-split ds-sct-1 page-part">
     <div class="split-box-img">
-        <img src="assets/img/test-ds.jpg" alt="Environnement personalisé pour Data Scientist" title="Environnement personalisé pour Data Scientist">
+        <img src="../assets/img/ds-aventure.jpg" alt="Environnement personalisé pour Data Scientist" title="Environnement personalisé pour Data Scientist">
     </div>
     <article class="split-box-content txt-content-style ">
         <div class="split-container">
@@ -53,7 +53,7 @@
         </div>
     </article>
     <div class="split-box-img">
-        <img src="assets/img/test-ds.jpg" alt="Environnement personalisé pour Data Scientist" title="Environnement personalisé pour Data Scientist">
+        <img src="../assets/img/test-ds.jpg" alt="Environnement personalisé pour Data Scientist" title="Environnement personalisé pour Data Scientist">
     </div>
 </section>
 <footer class="footer-page fullscreen ds-footer">
@@ -75,6 +75,5 @@
     </div>
 </footer>
 <?php
-    $moreJS = "<script src=\"assets/js/isInViewport.min.js\"></script>";
     include('includes/footer.php');
 ?>
