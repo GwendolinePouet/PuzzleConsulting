@@ -5,6 +5,10 @@ $('document').ready(function ($) {
         $(this).next('.label-field').addClass('active');
     });
 
+    $('.burger-menu').click(function() {
+       $('.nav-site .menu').toggle('slow');
+    });
+
 });// /!\ END OF READY FUNCTION
 
 

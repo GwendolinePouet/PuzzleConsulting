@@ -1,0 +1,95 @@
+@media all and (max-width:1080px) {
+
+  //Style generales
+  body {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+  .vertical-nav {
+    display: none;
+  }
+  .sct-entry .slogan-container h1, .sct-entry .slogan-container .slogan-title {
+    font-size: 2em;
+  }
+  //HEADER
+  .burger-menu {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .header-site {
+    padding: 15px 20px;
+  }
+  .nav-site {
+    float: none;
+    height: auto;
+
+    .menu {
+      display: none;
+      margin-top: 20px;
+
+      li {
+        border-bottom: 1px solid $color-iv-2;
+        width: 100%;
+        a::after {
+          display: none;
+        }
+        
+      }
+    }
+  }
+
+
+  //Footer
+  .footer-page {
+    flex-direction: column;
+    padding: 15px 20px;
+    text-align: center;
+    .social-container {
+      text-align: center;
+    }
+  }
+  .footer-1 {
+
+    .newsletter-container {
+      flex-direction: column;
+      margin-top: 30px;
+    }
+    .newsletter-txt strong {
+      font-size: 1rem;
+      color: #31CDFF;
+    }
+  }
+  .newsletter-form {
+    .input-email {
+      margin-top:20px;
+    }
+    .newsletter-txt {
+      padding-right: 0;
+    }
+  }
+
+  //Home & template
+  .sct-split {
+    flex-direction: column;
+  }
+  .sct-split .split-box-img, .sct-split .split-box-content {
+    width: 100%;
+  }
+  .infos-contact {
+    flex: 0;
+    padding: 75px 20px 40px;
+
+    address p {
+      width: 100%;
+    }
+  }
+  .split-form-contact {
+    padding: 75px 20px 30px;
+  }
+
+
+
+
+}

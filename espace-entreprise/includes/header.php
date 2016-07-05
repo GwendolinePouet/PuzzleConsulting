@@ -63,10 +63,15 @@ $moreJS = "";
 
 
     <nav class="nav-site">
+        <div class="burger-menu">
+            <span class="burger-menu-line"></span>
+            <span class="burger-menu-line"></span>
+            <span class="burger-menu-line"></span>
+        </div>
         <ul class="menu">
             <li><a <?php if($activeEds) { echo 'class="active" ' ; }  ?>href="/espace-data-scientist">Esapce Data Scientist</a></li>
             <li><a <?php if($activeEe) { echo 'class="ee-link-menu active" ' ; }  ?>href="/espace-entreprise">Espace Entreprise</a></li>
-            <li><a <?php if($activeCn) { echo 'class="active" ' ; }  ?>href="/#contact">Nous contacter</a></li>
+            <li><a <?php if($activeCn) { echo 'class="active" ' ; }  ?>href="/#part2">Nous contacter</a></li>
         </ul>
     </nav>
 

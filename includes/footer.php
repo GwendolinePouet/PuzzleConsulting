@@ -11,7 +11,7 @@
                 <a href="http://bit.ly/299EN1M" target="_blank" class="social-link icon-twitter" title="Page Twitter de la société Puzzle" rel="author" onclick="trackOutboundLink('https://twitter.com/Puzzle_consult'); return false;"><span>Twitter</span></a>
             </li>
         </ul>
-        <p class="copyright">&copy; 2016 Puzzle, tous droits réservés <a href="/mentions-legales.html" title="Mentions légales">Mentions légales</a> <a href="/kit-presse.html" title="Kit Presse">Kit presse</a></p>
+        <p class="copyright">&copy; 2016 Puzzle, tous droits réservés <a href="/mentions-legales.html" title="Mentions légales">Mentions légales</a> <a href="/kit-presse.html" title="Kit Presse">Kit&nbsp;presse</a></p>
     </div>
     <div class="newsletter-container">
         <div class="newsletter-txt">

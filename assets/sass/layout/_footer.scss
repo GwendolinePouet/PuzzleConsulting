@@ -71,7 +71,9 @@
   .newsletter-form {
     width: 300px;
 
-
+    .input-email::after {
+      display: none;
+    }
     input[type="email"] {
       border-bottom-color: $color-iv-2;
       background: transparent;

@@ -13,7 +13,7 @@
     <ul class="point-list">
     </ul>
 </nav>
-<a href="/recrutement.php" class="btn-page btn-recrutement icon-candidature" title="Postuler en ligne">Je poste ma candidature</a>
+<a href="recrutement.php" class="btn-page btn-recrutement icon-candidature" title="Postuler en ligne">Je poste ma candidature</a>
 <section id="part1" class="sct-entry ds-sct-entry page-part">
     <div class="slogan-container container">
         <h1 class="slogan-title">Vivez l'expérience Puzzle</h1>

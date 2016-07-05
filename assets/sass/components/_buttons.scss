@@ -10,6 +10,9 @@
     vertical-align: middle;
     margin-right: 11px;
   }
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .btn-recrutement {
@@ -28,6 +31,12 @@
   text-transform: uppercase;
   font-weight: bold;
   border: none;
+
+  &:hover {
+    background-color: transparent;
+    border: 1px solid $color-iv-1;
+    color: $color-iv-1;
+  }
 }
 .btn-start:visited {
   color: $color-white;
