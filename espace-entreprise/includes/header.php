@@ -15,7 +15,6 @@ $moreJS = "";
     <title><?php echo $title; ?></title>
     <meta name="description" content="<?php echo $description; ?>">
     <meta name="keywords" content="<?php echo $keywords; ?>">
-    <meta name="robots" content="noindex">
 
     <!-- VIEWPORT -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
