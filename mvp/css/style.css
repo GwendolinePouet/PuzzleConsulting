@@ -1,0 +1,896 @@
+/*      -----     FONTS ET AUTRES   -----      */
+
+.clearfix:after {
+    clear: both;
+    display: table;
+    content: "";
+}
+.clearfix-100:after {
+    clear: both;
+    display: table;
+    content: "";
+}
+body {font-family:Open Sans,Arial,Helvetica,sans-serif;}
+body, html, .wrapper  {
+    height: 100%;
+}
+
+@font-face {
+    font-family: 'latoblack';
+    src: url('../fonts/lato-black-webfont.woff2') format('woff2'),
+    url('../fonts/lato-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'latolight';
+    src: url('../fonts/lato-light-webfont.woff2') format('woff2'),
+    url('../fonts/lato-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'montserratregular';
+    src: url('../fonts/montserrat-regular-webfont.woff2') format('woff2'),
+    url('../fonts/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'montserratbold';
+    src: url('../fonts/montserrat-bold-webfont.woff2') format('woff2'),
+    url('../fonts/montserrat-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'montserratlight';
+    src: url('../fonts/montserrat-light-webfont.woff2') format('woff2'),
+    url('../fonts/montserrat-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'latoregular';
+    src: url('../fonts/lato-regular-webfont.woff2') format('woff2'),
+    url('../fonts/lato-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*---- police d'icons BURGER----*/
+@font-face {
+    font-family: 'icomoon';
+    src:url('../fonts/icomoon.eot?-qxh3f0');
+    src:url('../fonts/icomoon.svg?-qxh3f0#icomoon') format('svg'),
+    url('../fonts/icomoon.eot?#iefix-qxh3f0') format('embedded-opentype'),
+    url('../fonts/icomoon.woff?-qxh3f0') format('woff'),
+    url('../fonts/icomoon.ttf?-qxh3f0') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    color: #000;
+    font-size: 2em;
+}
+.icon-menu:before {
+    content: "\e9bd";
+}
+.icon-menu {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    display: none;
+}
+
+/* pour le logo cercle qui tourne =========== */
+@keyframes spin {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*      -----     GENERAL   -----      */
+h2{
+    color:#4d2e2e;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-top: 0px;
+    font-family: 'montserratbold', sans-serif;
+}
+h3{
+    color:#4d2e2e;
+    font-size: 19px;
+    margin-bottom: 10px;
+    line-height: 20px;
+    font-family: 'montserratbold', sans-serif;
+}
+p {
+    font-family: 'latolight' ,'latoregular' , 'Helvetica',sans-serif;
+    font-size: 14px;
+}
+
+/*      -----     FIN GENERAL   -----      */
+
+
+/*      -----     FIN FONTS ET AUTRES   -----      */
+
+
+
+/*      -----     HEADER   -----      */
+header {
+    left:0px;
+    position:absolute;
+    width:100%;
+    background-color: rgba(0, 0, 255, 0);
+    -webkit-transition: .6s ease-in-out;
+    transition: .6s ease-in-out;
+    z-index:3;
+}
+.header {
+    margin-top:0;
+    height: 70px;
+    position: fixed;
+}
+
+.header h1{
+    margin-top:0;
+}
+.logo {
+    width: 250px;
+    margin-left: 80px;
+    margin-top:30px;
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+.logo, .logo .logo-icon, .logo .logo-txt, .nav-site .menu li {
+    display: inline-block;
+    vertical-align: middle; }
+.logo .logo-icon {
+    position: relative;
+    width: 38px;
+    height: 38px;
+    transition: all 0.2s ease-in; }
+.logo:hover  .logo-icon{
+    transform: scale(1.2);
+}
+/* line 29, ../sass/layout/_header.scss */
+.logo .logo-icon [class^="logo-part-"] {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0; }
+/* line 36, ../sass/layout/_header.scss */
+.logo .logo-icon .logo-part-1 {
+    -webkit-animation: spin 15s linear infinite;
+    animation: spin 15s linear infinite; }
+/* line 39, ../sass/layout/_header.scss */
+.logo .logo-icon .logo-part-2 {
+    -webkit-animation: spin 15s linear infinite reverse;
+    animation: spin 15s linear infinite reverse; }
+/* line 44, ../sass/layout/_header.scss */
+.logo .logo-txt {
+    margin: 0;
+    line-height: 1;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none; }
+/* line 53, ../sass/layout/_header.scss */
+.logo .logo-txt span {
+    display: none; }
+/* line 57, ../sass/layout/_header.scss */
+.logo .logo-txt::before {
+    content: "puzzle";
+    font-size: 1.30em;
+    color: #FFFFFF;
+    font-family: "puzzle", Helvetica, sans-serif;
+    margin-left: 10px; }
+.navigation {
+    position: absolute;
+    top:50px;
+    right:80px;
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+
+.navigation ul li {
+    list-style: none;
+    padding: 0 30px;
+    display: inline-block;
+}
+.navigation a {
+    text-decoration: none;
+    color:#ffffff;
+    font-family: 'latoregular' ,'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.nav-bord {
+    position: relative;
+}
+.nav-bord:hover::after {
+    content: "";
+    position: absolute;
+    left: 20%;
+    height:1px;
+    background-color: #fff;
+    top: 24px;
+    min-width: 60%;
+}
+.nav-active::after {
+    content: "";
+    position: absolute;
+    left: 20%;
+    height:1px;
+    background-color: #179CC5;
+    top: 24px;
+    min-width: 60%;
+}
+.nav-active-rouge::after {
+    background-color: #FF4B7C;
+}
+.pageEntreprise .nvb1::after {
+    content: "";
+    position: absolute;
+    left: 20%;
+    height:1px;
+    background-color: #FF4B7C;
+    top: 24px;
+    min-width: 60%;
+}
+/*      ******     class pour la nav lors du scroll   ******      */
+
+.visible {
+    background-color: #1e1e1e;
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+.visible .navigation {
+    text-align: right;
+    margin-top:-25px;
+}
+.visible .navigation ul li {
+    list-style: none;
+    padding: 0 30px;
+    display: inline-block;
+    margin-top:-40px;
+}
+.visible .logo {
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    width: 250px;
+    margin-left: 80px;
+    margin-top:10px;
+    display: block;
+    border:none;
+}
+
+/*      -----     FIN HEADER   -----      */
+
+
+/*      -----     points sur lecran daccueil   -----      */
+
+.block-question #point {
+    /*margin: 30px 0 20px;*/
+    position: fixed;
+    right:50px;
+    z-index: 2;
+    margin-top:20%;
+}
+.block-question #point li:hover {
+    background-color: #000000;
+}
+.block-question:hover {
+    border:1px solid #000000;
+}
+
+.block-question #point li {
+    display: block!important;
+    margin: 25px 0;
+    background-color: rgba(0, 0, 255, 0);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+    border: 1px solid #ffffff;
+}
+
+.second-block .link,
+.socials path {
+    -webkit-transition: .2s ease-in-out
+}
+
+.block-question #point .active-point {
+    background: #ffffff;
+    -webkit-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    transform: scale(1.4)
+}
+.block-question #point .active-point-form {
+    background: #000000;
+    border:1px solid #000000;
+    -webkit-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    transform: scale(1.4)
+}
+.block-question #point .active-point-form-circle {
+    border:1px solid #000000;
+    width: 11px;
+    height: 11px;
+}
+
+/*      -----     ECRAN 1 BIG DATA   -----      */
+
+.ecran1 {
+    background-color: #a9a9a9;
+    padding-top:70px;
+    height:100%;
+    margin-bottom:0;
+    background-image: url(../img/home.jpg);
+}
+.ecran1 h2 {
+    text-transform: uppercase;
+}
+
+.bigdata {
+    text-align:center;
+    width: 100%;
+    color:#ffffff;
+    margin-top:150px;
+}
+.bigdata h2 {
+    color:#ffffff;
+}
+
+.ecran1Entreprise {
+    display: none;
+}
+.ecran1Entreprise .bigdata {
+    text-align:right;
+    padding-right:100px;
+    padding-top:30px;
+}
+.ecran1Entreprise h2 {
+    text-transform: lowercase;
+}
+.decouvrez-entreprise {
+    font-size:45px;
+    text-transform: uppercase;
+}
+
+/*      -----     FIN ECRAN 1 BIG DATA   -----      */
+
+/*      -----    NAVIGATION ECRAN 1 A 2   -----      */
+.logoNoir {
+    width: 250px;
+    margin-left: 80px;
+    margin-top:5px;
+    display: block;
+    border:none;
+}
+.navigation2 {
+    text-align: right;
+    margin-top:-40px;
+}
+.navigation2 ul li {
+    list-style: none;
+    padding: 0 30px;
+    display: inline-block;
+    margin-top:-40px;
+}
+.navigation2 a {
+    text-decoration: none;
+    color:#2e2e2e;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+/*      -----     ECRAN 2   -----      */
+
+.ecran2 {
+    height: 100%;
+}
+
+.ecran2 article {
+    float: left;
+    width:50%;
+}
+.article1 {
+    height: 100%;
+    background-color: #179CC5;
+    background-image: url(../img/fond-bleu.jpg);
+    position:absolute;
+    left:0;
+    margin-right:50%;
+    transition: all .4s;
+}
+
+.article2 {
+    position:absolute;
+    right:0;
+    height: 100%;
+    margin-left:50%;
+    transition: all .4s;
+    width:50%;
+}
+.ecran2 h2 {
+    text-align: center;
+    color:#ffffff;
+    padding-top:60px;
+    text-transform: none;
+    position: relative;
+    font-family: 'montserratbold', sans-serif;
+    font-size:26px;
+}
+.article2 h2 {
+    color:#1e1e1e;
+}
+.ecran2 h2::after {
+    content: "";
+    position: absolute;
+    left: 47%;
+    height:1px;
+    background-color: #31cdff;
+    top: 110px;
+    width: 30px;
+}
+.article1 h2::after {
+    background:#ffffff;
+}
+@media screen and (max-width: 982px) {
+    .ecran2 h2::after {
+        top:100px;
+    }
+    .ecran2 h2 {
+        font-size: 22px;    }
+}
+.ecran2 img {
+display:block;
+margin:100px auto;
+padding: 20px;
+border-radius: 50%;
+border:1px dotted #1e1e1e;
+margin-bottom:20px;
+max-width: 250px;
+}
+.blocDisp1 img {
+    border:1px dotted #ffffff;
+}
+.ecran2 input {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border:1px solid #ffffff;
+    margin:0 auto;
+    display: block;
+    margin-top:65px;
+    background-color: rgba(0, 0, 255, 0);
+}
+.article2 input {
+    color:#1e1e1e;
+    border:1px solid #1e1e1e;
+}
+.plusData, .plusEntrep {
+    font-size: 32px;
+    color:#ffffff;
+}
+.slidingDiv {
+    height:300px;
+    background-color: #99CCFF;
+    padding:20px;
+    margin-top:10px;
+    border-bottom:5px solid #3399FF;
+}
+
+.slideData, .slideEntrep {
+    display: none;
+}
+.moinsData, .moinsEntrep {
+    cursor: pointer;
+    display:block;
+    height:50px;
+    background-color: blue;
+}
+
+/*      -----     FIN ECRAN 2   -----      */
+
+/*      -----     ECRAN 3 celui qui apparait quand on clique sur le bouton   -----      */
+
+.ecran3 {
+    height:auto;
+}
+.ecran3 h3 {
+    text-align: center;
+}
+.ecran3 h3::after {
+    content: "";
+    position: absolute;
+    left: 47%;
+    height:1px;
+    background-color: #FF4B7C;
+    top: 205px;
+    width: 30px;
+}
+.ecran3 p {
+    color: #2e2e2e;
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px;
+    background-image: none;
+    text-align: center;
+}
+.partieEntreprise .article1 {
+    background:#fff;
+    background-image: none;
+}
+.partieEntreprise img {
+    margin: 0;
+    padding: 0px;
+    border-radius: 0;
+    border: none;
+    width: 100px;
+}
+
+.image-entreprise {
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    bottom:0;
+}
+.image-entreprise p {
+    color:#ffffff;
+    padding-top:100px;
+    padding-bottom:100px;
+    text-align: center;
+    font-size:16px;
+    position: absolute;
+}
+.artecr3 img {
+    display:block;
+    margin:0 auto;
+    padding: 0px;
+    margin-top:50px;
+    margin-bottom:20px;
+}
+.boutonsE3 {
+    margin:50px auto;
+    text-align: center;
+}
+
+.boutonsE3 a {
+    color:rgba(255, 255, 255, .5);
+    padding: 10px 30px;
+    font-family:'montserratbold', sans-serif;
+    text-transform: uppercase;
+    display:inline-block;
+    border-radius:10px;
+}
+.boutonsE3 a:hover {
+    transition: .3s;
+}
+.boutonsE3 a:first-child:hover {
+    color:#ffffff;
+    text-decoration: none;
+    background-color: rgba(49, 205, 255, .5);
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+}
+.boutonsE3 a:last-child {
+    margin-left:30px;
+}
+.boutonsE3 a:last-child:hover {
+    color:#ffffff;
+    text-decoration: none;
+    background-color: rgba(255, 75, 124, .5);
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+}
+
+/*      -----     FIN ECRAN 3   -----      */
+
+/*      -----     FIN ECRAN 4 avec le formulaire et la map   -----      */
+
+.ecran4 article {
+    width: 50%;
+    float: left;
+}
+
+
+/*      -----     formulaire accueil   -----      */
+.ecran-form {
+    padding: 90px 70px 0 70px;
+}
+.form-accueil {
+    padding-top:100px;
+    padding-bottom:120px;
+    max-width: 640px;
+    margin:0 auto;
+}
+.form-control {
+    background-color: rgba(0, 0, 255, 0);
+    border:none;
+    box-shadow:none;
+    border-bottom:1px solid #2e2e2e;
+    border-radius: 0;
+}
+.ecran-form form {
+    margin-top:40px;
+}
+.ecran-form h3 {
+    color:#010101;
+    font-family:'montserratbold', sans-serif;
+    font-size: 26px;
+    text-align: center;
+    position: relative;
+}
+.ecran-form h3::after {
+    content: "";
+    position: absolute;
+    left: 47%;
+    height:1px;
+    background-color: #31cdff;
+    top: 40px;
+    width: 26px;
+}
+.ecran-form p {
+    margin-top:30px;
+    text-align: center;
+    font-size:18px;
+    color: #31cdff;
+}
+.btn-primary {
+    background-color: #31cdff;
+    border: none;
+    padding:5px 60px;
+    text-transform: uppercase;
+    font-family: 'montserratbold', sans-serif;
+    display: block;
+    margin:0 auto;
+    width: auto;
+    margin-top:70px;
+}
+/* partie MAP */
+
+.lp-sct-map{
+    min-height: 100vh;
+}
+/* MAP */
+.lp-sct-map {
+    position: relative;
+}
+.lp-sct-map h3 {
+    z-index: 2;
+    color: #FFF;
+    font-size: 26px;
+    text-align: center;
+    padding: 40px;
+    margin: 0;
+    position: relative;
+}
+.bloc-map {
+    height:50%;
+    z-index: 2;
+    width: 100%;
+    position: absolute;
+    background-color: #2e2e2e;
+}
+
+.lp-sct-map h3::after {
+    content: "";
+    position: absolute;
+    left: 47%;
+    height:1px;
+    background-color: #31cdff;
+    top: 75px;
+    width: 30px;
+}
+.lp-sct-map p {
+    margin-top:-15px;
+    text-align: center;
+    font-size:18px;
+    color: #31cdff;
+}
+.lp-sct-map ul {
+    color:#ffffff;
+    list-style: none;
+    font-size: 12px;
+    margin-top:30px;
+    float: left;
+}
+.bloc-ul {
+    width:90%;
+    margin:0 auto;
+}
+.partieEntreprise-contact article:first-child {
+    float:right;
+}
+.partieEntreprise-contact .bloc-map, .partieEntreprise-contact .btn-primary {
+    background-color: #FF4B7C;
+}
+#map {
+    position:absolute;
+    top:0;
+    bottom:0;
+    width:100%;
+    z-index: 1;
+}
+
+/*      -----     FIN ECRAN 4   -----      */
+
+/*      -----     FOOTER   -----      */
+
+footer {
+    background: #2e2e2e;
+    display: block;
+    width:100%;
+    padding-bottom: 15px;
+    font-size: 12px;
+    font-family: 'helvetica', sans-serif;
+    padding-top:80px;
+}
+footer ul li {
+    list-style: none;
+    padding:10px 10px 0 10px;
+    display: inline-block;
+    color:#ffffff;
+    padding-left:20px;
+}
+
+footer ul {
+    padding-left:0;
+}
+footer ul a {
+    color:#ffffff;
+}
+footer ul a:hover {
+    text-decoration: none;
+}
+
+/*      -----     Mentions légales   -----      */
+
+.mentions-content h2 {
+    color:dimgrey;
+    font-size: 26px;
+}
+.mentions-content h3 {
+    color: #4169e1;
+}
+
+.mentions-content p{
+    font-size: 15px;
+    text-align: justify;
+    margin: 10px 10px;
+}
+.mentions-content{
+    margin-top:90px;
+    margin-bottom: 50px;
+    line-height: auto;
+}
+.mlegales {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*      ************     MEDIA QUERY   ***********      */
+
+
+/*      -----     FOOTER   -----      */
+
+@media screen and (max-width: 640px) {
+
+
+    .icon-menu {
+        display: block;
+        margin-top: 14px;
+        color: grey;
+    }
+
+
+    /* -- Barre de Navigation -- */
+
+
+    .navigation {
+        position: absolute;
+        top: 70px;
+        right: 0px;
+        left:0px;
+        -webkit-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+    }
+
+    .nav-main ul {
+        display: none;
+        list-style: none;
+        border-bottom: 3px solid #333399;
+        padding: 0;
+        margin-top:0px;
+        background: #000;
+    }
+
+    .nav-main li {
+        height: 70px;
+        display: block;
+        background: #000;
+        width:100%;
+        text-align: center;
+        margin-top:25px;
+    }
+    .logo {
+        margin-top:10px;
+    }
+
+    .ecran1, .ecran2{
+        height:auto;
+    }
+    .ecran1 {
+        padding:1px 0 120px;
+    }
+    .article1, .article2 {
+        width: 100%;
+        position: static;
+        float: none;
+    }
+    .article2 {
+        margin-left:0;
+    }
+    .ecran2 article {
+        float:none;
+        width:100%;
+    }
+    .article2 h2 {
+        font-size: 20px;
+    }
+
+    .boutonsE3 a:last-child {
+        margin-left:0;
+        margin-top:10px;
+    }
+    .boutonsE3 {
+        margin: 10px;
+    }
+
+    .ecran4 article {
+        width: 100%;
+        float: left;
+    }
+
+
+
+
+    footer {
+        position: absolute ;
+    }
+    footer ul {
+        margin-bottom: 0;
+    }
+    footer ul li {
+        width:100%;
+        padding: 2px;
+    }
+}

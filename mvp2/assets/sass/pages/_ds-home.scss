@@ -1,0 +1,19 @@
+.ds-sct-entry {
+  background: url("../img/pattern.png") repeat fixed 0 0 /auto, url("../img/bg-ds-home.jpg") no-repeat fixed center center/cover, url("../img/pattern.png");
+}
+
+.ds-footer {
+
+  .social-link {
+    color: $color-ds;
+  }
+  .copyright-container a {
+
+    color: $color-ds;
+
+    &:hover {
+      color: $color-iv-2;
+    }
+
+  }
+}

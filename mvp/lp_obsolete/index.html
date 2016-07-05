@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset=utf-8 />
+    <meta name="Louez un Data Scientist" content="Aide aux entrepreneurs à rassembler les données pour un résultat optimisé." />
+    <meta name="robots" content="noindex">
+    <title>Puzzle - Louez un Data Scientist</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
+    <link href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' rel='stylesheet' />
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="styleldp.css">
+    <style>
+        body { margin:0; padding:0; }
+    </style>
+</head>
+<body>
+
+
+
+
+
+<div id="contactform">
+    <div class="wrapper-ldp" id="map_canvas">
+        <section>
+            <div class="bg-opacite">
+                <div class="ldp">
+                    <h1 id=""><a href="index.html"><img class="logo" src="logo.png" alt="Puzzle" /></a></h1>
+                    <!-- <img src="img/logold.jpg" alt="Agence Flamingos"> -->
+                </div>
+
+                <article class="ldp-form">
+                    <form method="post" action="process.php" id="newsletter-form" enctype="multipart/form-data">
+                        <fieldset>
+                            <legend>Laissez-nous votre contact</legend>
+
+                            <p>
+                                <label for="nom">Nom : </label>
+                                <input type="text" id="nom" name="nom" required >
+                            </p>
+                            <p>
+                                <label for="societe">Société : </label>
+                                <input type="text" id="societe" name="societe" required >
+                            </p>
+                            <p>
+                                <label for="email">Adresse Email : </label>
+                                <input type="email" id="email" name="email"  required="required" placeholder="Votre email" >
+                            </p>
+                            <p>
+                                <input id="submit-newsletter" type="submit" value="Envoyer" >
+
+                            </p>
+                        </fieldset>
+                    </form>
+                </article>
+            </div>
+        </section>
+    </div> <!-- wrapper -->
+</div>
+<div id='map'></div>
+<footer class="">
+    <div class="content-footer">
+        <ul>
+            <li><a href="mentions.html" id="btnMentions" title="Mentions légales">Mentions</a></li>
+            <!--<li><a href="#" title="Kit presse">Kit Presse</a></li>-->
+            <li>-</li>
+            <!--<li><a href="javascript:void(0);" target="_blank" title="Linked In"><img src="img/fb-picto.png" alt="Facebook"></a></li>-->
+            <!--<li><a href="javascript:void(0);" target="_blank" title="Linked In"><img src="img/li-picto.png" alt="LinkedIn"></a></li>-->
+            <!--<li><a href="javascript:void(0);" target="_blank" title="Linked In"><img src="img/tt-picto.png" alt="Twitter"></a></li>-->
+            <li> © Puzzle 2016 all rights reserved</li>
+        </ul>
+    </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="custom-landing.js"></script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-79433549-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+//Global header for every pages of site
+
+.header-site {
+  background-color: $color-black;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  padding: 15px 40px;
+  transition: all 0.2s ease-in;
+  text-align: left;
+
+  &::after {
+    @extend %clearfix;
+  }
+}
+
+.logo {
+
+  @extend %inline-block-m;
+
+
+  .logo-icon {
+    @extend %inline-block-m;
+    position: relative;
+    @include size(38px,38px);
+    transition: all 0.2s ease-in;
+
+    [class^="logo-part-"] {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 0;
+    }
+
+    .logo-part-1 {
+      animation: spin 15s linear infinite;
+    }
+    .logo-part-2 {
+      animation: spin 15s linear infinite reverse;
+    }
+
+  }
+
+  &:hover .logo-icon {
+    transform: scale(1.2);
+  }
+
+  .logo-txt {
+    font-size: 2em;
+    margin: 0;
+    line-height: 1;
+    @extend %inline-block-m;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+
+    span {
+      display: none;
+    }
+
+    &::before {
+      content: "\70";
+      font-size: 1.35em;
+      color: $color-white;
+      font-family: "puzzle", Helvetica, sans-serif;
+      margin-left: 10px;
+    }
+   }
+  }
+
+  .nav-site {
+    float: right;
+    margin: 0;
+    height: 42px;
+
+    .menu {
+      margin-top: 3px;
+
+      li {
+        @extend %inline-block-m;
+        font-size: 1em;
+        color: $color-white;
+
+        a {
+          padding: 10px 15px;
+          color: $color-white;
+          transition: all 0.2s ease-in;
+          display: block;
+
+          &::after {
+            content: "";
+            display: block;
+            margin: 10px auto 0;
+            width: 50px;
+            height: 2px;
+            background-color: $color-iv-2;
+            opacity: 0;
+          }
+          &.active {
+            font-weight: bold;
+          }
+          &:hover::after, &.active::after {
+            animation: linebottom .2s forwards;
+          }
+        }
+        .ee-link-menu.active::after {
+          background-color: $color-iv-2;
+        }
+      }
+    }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,81 @@
+
+/*--------------------
+$ STAFFING PAGE
+--------------------*/
+.entry {
+  background: url("../img/bg-stafing-page.jpg") no-repeat fixed 0% 0% / cover;
+  position: relative;
+}
+.staffing-page {
+
+
+
+
+  .slogan-container {
+     color: $color-white;
+      width: 100%;
+      text-align: center;
+      vertical-align: middle;
+
+     .slogan {
+        font-size: 4em;
+        animation: appear .6s 0.85s forwards;
+        opacity: 0;
+       margin: 0;
+
+       &::after {
+         content: "";
+         width: 0;
+         display: block;
+         border-bottom: 4px solid $color-iv-3;
+         margin: 0 auto;
+         animation: linebottom .3s 1.45s forwards;
+       }
+      }
+
+      p {
+        font-size: 1.5em;
+        animation: appear .3s 2.25s forwards;
+        opacity: 0;
+      }
+
+  }
+    .user-choice {
+      position: absolute;
+      bottom: 40px;
+      width: 100%;
+     text-align: center;
+
+      li {
+        display: inline-block;
+        margin: 0 20px;
+
+        &:first-child a {
+          background-color: cornflowerblue;
+        }
+        &:last-child  a{
+          background-color: coral;
+        }
+
+        a,
+        a:hover,
+        a:visited {
+          display: block;
+          padding: 15px 20px;
+          border-radius: 15px;
+          color: #fff !important;
+          font-size: 22px;
+        }
+      }
+   }
+}
+
+
+
+
+
+
+
+
+
+

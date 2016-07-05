@@ -1,0 +1,160 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    outline: none;
+}
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+
+body {
+    line-height: 1;
+}
+
+
+ol, ul {
+    list-style: none;
+}
+
+
+li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+a, a:hover, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+blockquote, q {
+    quotes: none
+}
+
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+strong {
+    font-weight: bold;
+}
+.error-page {
+    font-family: 'Lato';
+    letter-spacing: 1px;
+    font-weight: 300;
+    color: #FFF;
+    font-size: 20px;
+    min-height: 100vh;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: url('../img/error-bg.jpg') no-repeat fixed top right / cover;
+}
+.error-page article {
+    margin: 40px 8vw;
+    width: 680px;
+    max-width: 100%;
+    background-color: rgba(0,0,0,0.85);
+    padding: 40px;
+    border-radius: 15px;
+}
+.error-page .title {
+    font-size: 4em;
+    margin-bottom: .5em;
+    font-weight: bold;
+}
+.error-page .text {
+    margin-bottom: 0.85em;
+    color: #31CDFF;
+}
+.error-page .text-2 {
+    font-size: .6em;
+    font-weight: 400;
+}
+.error-page .btn {
+    margin-top: 2em;
+    display: inline-block;
+    background-color: #31CDFF;
+    border-radius: 6px;
+    padding: 10px 20px;
+
+}
+.btn::before {
+    content: '←';
+    display: inline-block;
+    margin-right: 15px;
+}
+
+@media all and (max-width: 600px) {
+
+
+    .error-page article {
+        margin: 20px 20;
+        padding: 30px;
+        border-radius: 0;
+    }
+    .error-page .title {
+        font-size: 2em;
+
+    }
+    .error-page .text {
+        margin-bottom: 1em;
+        font-size: 0.9em;
+    }
+    .error-page .text-2 {
+        font-size: .6em;
+        font-weight: 400;
+    }
+    .error-page .btn {
+        margin-top: 1.5em;
+
+    }
+
+}

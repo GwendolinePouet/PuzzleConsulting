@@ -1,0 +1,6 @@
+//Helper to clear inner floats
+%clearfix  {
+    content: '';
+    display: table;
+    clear: both;
+}

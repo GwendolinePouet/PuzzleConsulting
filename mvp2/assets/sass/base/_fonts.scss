@@ -1,0 +1,103 @@
+//LOGO FONT
+@font-face {
+  font-family: 'puzzle';
+  src:    url('../fonts/logo/puzzle.eot?jn6djm');
+  src:    url('../fonts//logopuzzle.eot?jn6djm#iefix') format('embedded-opentype'),
+  url('../fonts/logo/puzzle.ttf?jn6djm') format('truetype'),
+  url('../fonts/logo//puzzle.woff?jn6djm') format('woff'),
+  url('../fonts/logo/puzzle.svg?jn6djm#puzzle-font') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'icons';
+  src:    url('../fonts/icons/icons.eot?qmyu91');
+  src:    url('../fonts/icons/icons.eot?qmyu91#iefix') format('embedded-opentype'),
+  url('../fonts/icons/icons.ttf?qmyu91') format('truetype'),
+  url('../fonts/icons/icons.woff?qmyu91') format('woff'),
+  url('../fonts/icons/icons.svg?qmyu91#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"]::before, [class*=" icon-"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-enveloppe::before {
+  content: "\e93c";
+}
+.icon-objet::before {
+  content: "\e942";
+}
+.icon-accompagnement::before {
+  content: "\e904";
+}
+.icon-analysenoir::after {
+  content: "\e905";
+  font-family: 'icons' !important;
+  font-weight: normal;
+}
+.icon-arobase::before {
+  content: "\e917";
+}
+.icon-batimententreprise::before {
+  content: "\e918";
+}
+.icon-bonhomme::before {
+  content: "\e925";
+}
+.icon-candidature::before {
+  content: "\e906";
+}
+.icon-conseil::before {
+  content: "\e92f";
+}
+.icon-ds::before {
+  content: "\e930";
+}
+.icon-formation::before {
+  content: "\e943";
+}
+.icon-guide::before {
+  content: "\e944";
+}
+.icon-ksako::before {
+  content: "\e945";
+}
+.icon-message::before {
+  content: "\e946";
+
+}
+.icon-progres::after {
+  content: "\e948";
+  font-family: 'icons' !important;
+  font-weight: normal;
+}
+.icon-tel::before {
+  content: "\e949";
+}
+.icon-arrow-right::before {
+  content: "\e903";
+}
+.icon-facebook::before {
+  content: "\e902";
+}
+.icon-twitter::before {
+  content: "\e900";
+}
+.icon-linkedin::before {
+  content: "\e901";
+}

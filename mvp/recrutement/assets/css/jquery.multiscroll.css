@@ -1,0 +1,170 @@
+/**
+ * multiscroll 0.0.6 Beta
+ * https://github.com/alvarotrigo/multiscroll.js
+ * MIT licensed
+ *
+ * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
+ */
+html, body {
+    margin: 0;
+    padding: 0;
+	overflow:hidden;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.ms-section {
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.ms-section.ms-table{
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+.ms-tableCell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+.ms-easing {
+    -webkit-transition: all 0.7s ease-out;
+    -moz-transition: all 0.7s ease-out;
+    -o-transition: all 0.7s ease-out;
+    transition: all 0.7s ease-out;
+}
+#multiscroll-nav {
+    position: fixed;
+    z-index: 100;
+    margin-top: -32px;
+    top: 50%;
+    opacity: 1;
+}
+#multiscroll-nav.right {
+    right: 17px;
+}
+#multiscroll-nav.left {
+    left: 17px;
+}
+#multiscroll-nav ul{
+  margin: 0;
+  padding: 0;
+}
+#multiscroll-nav li{
+    display: block;
+    width: 14px;
+    height: 13px;
+    margin: 7px;
+    position:relative;
+}
+#multiscroll-nav li a{
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+}
+#multiscroll-nav li .active span{
+    background: #EEE;
+}
+#multiscroll-nav span{
+    top: 2px;
+    left: 2px;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #FFF;
+    background: rgba(255, 255, 255, 0);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
+.multiscroll-tooltip {
+    position: absolute;
+    color: #fff;
+    font-size: 14px;
+    font-family: arial, helvetica, sans-serif;
+    top: -2px;
+    white-space: nowrap;
+    max-width: 220px;
+}
+.multiscroll-tooltip.right {
+    right: 20px;
+}
+.multiscroll-tooltip.left {
+    left: 20px;
+}
+
+#myMenu li {
+    display:inline-block;
+    margin: 10px;
+    color: #000;
+    background:#fff;
+    background: rgba(255,255,255, 0.3);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+#myMenu li.active{
+    background:#666;
+    background: rgba(255,255,255, 1);
+    color: #000;
+}
+#myMenu li a{
+    text-decoration:none;
+    color: #000;
+}
+#myMenu li.active a:hover{
+    color: #000;
+}
+#myMenu li:hover{
+    background: rgba(255,255,255, 0.8);
+}
+#myMenu li a,
+#myMenu li.active a{
+    padding: 9px 18px;
+    display:block;
+}
+#myMenu li.active a{
+    color: #000;
+}
+#myMenu{
+    position:fixed;
+    top:0;
+    left:0;
+    height: 40px;
+    z-index: 70;
+    width: 100%;
+    padding: 0;
+    margin:0;
+}
+#infoMenu{
+    height: 20px;
+    color: #f2f2f2;
+    position:fixed;
+    z-index:70;
+    bottom:0;
+    width:100%;
+    text-align:right;
+    font-size:0.9em;
+    padding:8px 0 8px 0;
+}
+#infoMenu ul{
+    padding: 0 40px;
+}
+#infoMenu li a{
+    display: block;
+    margin: 0 22px 0 0;
+    color: #333;
+}
+#infoMenu li a:hover{
+    text-decoration:underline;
+}
+#infoMenu li{
+    display:inline-block;
+    position:relative;
+}
+

@@ -1,0 +1,40 @@
+.btn-page {
+  padding: 9px 22px;
+  border-radius: 14px;
+  color: $color-white !important;
+  display: inline-block;
+  &::before {
+    font-size: 2em;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 11px;
+  }
+}
+
+.btn-recrutement {
+  position: fixed;
+  z-index: 9999;
+  bottom: 76px;
+  right: 0;
+  background-color: $color-ds;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 14px 0 0 14px;
+}
+.btn-start {
+  margin-top: 10px;
+  background-color: $color-iv-1;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+}
+.btn-start:visited {
+  color: $color-white;
+}
+.btn-send-answer {
+  background-color: $color-iv-1;
+  border: none;
+  font-size: 1.5em;
+  font-weight: 300;
+  font-family: 'Lato';
+}

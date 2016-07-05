@@ -1,0 +1,29 @@
+.footer-page {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  background-color: $color-black;
+  color: $color-white;
+  padding: 15px 40px;
+  @extend %black-link;
+
+  .social-container {
+    flex: 1;
+    .social-list li {
+      margin-bottom:0;
+    }
+    p {
+      font-size: 0.85em;
+      opacity: 0.8;
+      margin:0;
+    }
+  }
+  .copyright-container {
+    flex: 1;
+    text-align: right;
+  }
+
+}

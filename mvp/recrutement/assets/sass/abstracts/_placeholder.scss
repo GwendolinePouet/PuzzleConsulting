@@ -1,0 +1,25 @@
+//Helper to clear inner floats
+%clearfix  {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+//Inline block and verticla align
+%inline-block-t {
+     display: inline-block;
+     vertical-align: top;
+}
+%inline-block-m {
+    display: inline-block;
+    vertical-align: middle;
+}
+%inline-block-t {
+    display: inline-block;
+    vertical-align: bottom;
+}
+%black-link {
+  a {
+    color: $color-iv-2;
+  }
+}
